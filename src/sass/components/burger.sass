@@ -1,0 +1,63 @@
+.burger
+    position: relative
+
+    display: none
+    z-index: 1000
+    width: 50px
+    height: 50px
+    background-color: var(--color-transparent)
+    border: none
+    cursor: pointer
+
+    @media (max-width: 1199px)
+        display: block
+
+    @media (max-width: 575px)
+        width: 22px
+        height: 16px
+        margin-left: 6px
+
+    &__line
+        position: absolute
+        right: 7px
+        left: 7px
+        display: block
+        height: 2px
+        background-color: var(--color-black)
+        transition: transform 0.3s ease-in-out
+
+        @media (max-width: 575px)
+            height: 2px
+            width: 100%
+            left: 0
+
+        &:nth-child(1)
+            top: 13px
+
+            @media (max-width: 575px)
+                top: 0
+                left: 0
+
+        &:nth-child(2),
+        &:nth-child(3)
+            top: 23px
+
+            @media (max-width: 575px)
+                top: 7px
+
+        &:nth-child(4)
+            top: 33px
+
+            @media (max-width: 575px)
+                top: unset
+                bottom: 0
+
+    &.menu-open &__line:nth-child(1),
+    &.menu-open &__line:nth-child(4)
+        transform: scale(0)
+
+    &.menu-open &__line:nth-child(2)
+        transform: rotate(45deg)
+
+    &.menu-open &__line:nth-child(3)
+        transform: rotate(-45deg)

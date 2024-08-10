@@ -1,0 +1,32 @@
+.account
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+    padding: 3px 3px 3px 16px
+    border-radius: 20px
+    background: var(--desktop-background)
+    z-index: 1000
+
+    @media (max-width: 575px)
+        padding: 0
+
+    &__text
+        font-family: var(--font-family)
+        font-weight: 700
+        font-size: 1.4rem
+        line-height: 140%
+        text-transform: uppercase
+        color: var(--desktop-black)
+        transition: color .3s ease
+
+        @media (max-width: 575px)
+            display: none
+
+    &:hover &__text
+        color: var(--desktop-primary-orange)
+
+    &__img
+        border: none
+        border-radius: 100%
+        object-fit: cover

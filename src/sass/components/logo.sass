@@ -1,0 +1,17 @@
+.logo
+    z-index: 1000
+
+    &__img
+        path
+            fill: var(--color-black)
+            transition: all .3s ease
+
+    &:hover &__img path
+        fill: var(--desktop-primary-orange)
+
+    @media (max-width: 1199px)
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 7rem

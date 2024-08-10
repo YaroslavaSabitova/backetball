@@ -1,0 +1,28 @@
+.menu
+    position: relative
+    display: flex
+    align-items: center
+    gap: 8px
+
+    @media (max-width: 1199px)
+        display: none
+
+    &__text
+        font-family: var(--font-family)
+        font-weight: 700
+        font-size: 1.4rem
+        line-height: 140%
+        text-transform: uppercase
+        color: var(--desktop-black)
+        transition: color .3s ease
+
+    &__burger
+        &-img path
+            stroke: var(--desktop-black)
+            transition: stroke .3s ease
+
+    &:hover &__text
+        color: var(--desktop-primary-orange)
+
+    &:hover &__burger-img path
+        stroke: var(--desktop-primary-orange)

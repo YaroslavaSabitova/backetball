@@ -1,0 +1,53 @@
+.nav
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: row
+
+    &__list
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 2.4rem
+
+        @media (max-width: 1199px)
+            position: absolute
+            top: -21px
+            transform: translateX(-110%)
+            width: 101vw
+            height: 100vh
+            padding: 7rem 0
+            flex-direction: column
+            justify-content: space-evenly
+            background-color: var(--desktop-white)
+            transition: transform 0.5s ease
+            backdrop-filter: blur(25px)
+
+        &.menu-open
+            left: -21px
+            transform: translateX(0%)
+
+    &__item
+        @media (max-width: 1199px)
+            transform: translateX(-100px)
+            opacity: 0
+            transition: transform .7s ease, opacity 1s ease
+
+            .menu-open &
+                transform: translateX(0px)
+                opacity: 1
+
+    &__link
+        font-family: var(--font-family)
+        font-weight: 700
+        font-size: 1.4rem
+        line-height: 140%
+        text-transform: uppercase
+        color: var(--desktop-black)
+        transition: color .3s ease
+
+        &:hover,
+        &:active,
+        &:visited
+            color: var(--desktop-primary-orange)
