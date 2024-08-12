@@ -1,0 +1,31 @@
+.arrow-link
+    font-family: var(--font-family)
+    font-weight: 700
+    font-size: 2rem
+    line-height: 130%
+    text-transform: uppercase
+    display: flex
+    align-items: senter
+    justify-content: space-between
+    gap: 1.2rem
+
+    @media (max-width: 575px)
+        font-size: 1.4rem
+        line-height: 140%
+
+    &__img
+        animation: arrow-jumping 2s ease-in .2s infinite
+
+        @media (max-width: 575px)
+            display: none
+
+@keyframes arrow-jumping
+    0%,
+    20%,
+    40%,
+    100%
+        transform: translateX(0px)
+
+    10%,
+    30%
+        transform: translateX(7px)
