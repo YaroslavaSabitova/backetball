@@ -10,6 +10,7 @@
         align-items: center
         justify-content: space-between
         gap: 2.4rem
+        z-index: 999
 
         @media (max-width: 1199px)
             position: absolute
@@ -48,6 +49,6 @@
         transition: color .3s ease
 
         &:hover,
-        &:active,
-        &:visited
+        &:active
+        // &:visited
             color: var(--desktop-primary-orange)
