@@ -1,0 +1,21 @@
+.articles
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    flex-grow: 1
+    padding: 2rem 0
+    min-height: 32rem
+    border-bottom: 1px solid var(--desktop-grey-200)
+
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        gap: 1.6rem
+        width: 80%
+
+        @media (max-width: 1399px)
+            width: 100%

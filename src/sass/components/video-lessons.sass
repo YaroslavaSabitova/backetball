@@ -1,0 +1,38 @@
+.video-lessons
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    flex-grow: 1
+    padding-bottom: 2rem
+    border-bottom: 1px solid var(--desktop-grey-200)
+    min-height: 30.3rem
+
+    &__content
+        display: flex
+        align-items: stretch
+        justify-content: space-between
+        gap: 2rem
+
+        @media (max-width: 1399px)
+            flex-direction: column
+
+        &-img
+            background: url(../img/video-lessons.jpg) center/cover no-repeat
+            display: block
+            border-radius: 7px
+            width: 270px
+            max-width: 270px
+            min-height: 152px
+
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        width: 50%
+
+        @media (max-width: 1399px)
+            gap: 2rem
+            width: 100%

@@ -1,4 +1,5 @@
 .info-link
+    display: inline-block
     font-family: var(--font-family)
     font-weight: 700
     font-size: 1.2rem
@@ -25,10 +26,18 @@
         background: var(--desktop-background)
 
     &:hover
-        color: var(--desktop-red-negative)
+        color: var(--desktop-pressed-blue)
 
     &__wrapper
         display: flex
         flex-wrap: wrap
         align-items: center
+        justify-content: flex-start
         gap: 4px
+
+    @media (max-width: 1199px)
+        font-size: 1rem
+
+    @media (max-width: 575px)
+        border-radius: 2rem
+        padding: 6px 12px

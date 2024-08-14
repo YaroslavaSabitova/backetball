@@ -8,6 +8,10 @@
     @media (max-width: 991px)
         margin-bottom: 4.2rem
 
+    @media (max-width: 767px)
+        padding: 0
+        background: var(--color-transparent)
+
     &__wrapper
         display: flex
         align-items: flex-end
@@ -17,17 +21,22 @@
         @media (max-width: 1199px)
             margin-bottom: 2.1rem
 
+        @media (max-width: 575px)
+            margin-bottom: 1.7rem
+
     &__arrow-link
         color: var(--desktop-primary-green)
+        transition: all .2s ease
 
         &__img path
             fill: var(--desktop-primary-green)
+            transition: all .2s ease
 
     &__content
         display: flex
         flex-direction: row
-        justify-content: space-between
-        align-items: flex-start
+        justify-content: flex-start
+        align-items: stretch
         gap: 1.6rem
 
         &_first
@@ -36,9 +45,47 @@
             justify-content: space-between
             align-items: stretch
             gap: 2rem
+            max-width: 1194px
 
             &-links
-                max-width: 50%
+                max-width: 55%
+
+                @media (max-width: 767px)
+                    max-width: 100%
+
+        &_second
+            display: flex
+            flex-direction: column
+            border-left: 1px solid var(--desktop-grey-200)
+            padding: 0 1.6rem
+            width: 602px
+
+            @media (max-width: 767px)
+                display: none
+
+            &-subtitle
+                margin-bottom: auto
+                color: var(--desktop-black)
+
+                svg
+                    path
+                        display: none
+
+                &:hover
+                    color: var(--desktop-primary-green)
+
+                    svg
+                        path
+                            display: block
+                            fill: var(--desktop-primary-green)
+
+            &-text
+                font-family: var(--font-family)
+                font-weight: 700
+                font-size: 1.6rem
+                line-height: 140%
+                text-transform: uppercase
+                color: var(--desktop-black)
 
     &__promo
         display: flex
@@ -47,14 +94,26 @@
         justify-content: space-between
         padding: 2.4rem
 
+        @media (max-width: 575px)
+            padding: 1.2rem
+
         &_sections
             gap: 357px
             border-radius: 2rem
-            background-image: linear-gradient(180deg, rgba(32, 32, 32, 0.3) 0%, rgba(32, 32, 32, 0.3) 100%), url(../img/learn-promo.jpg)
+            background-image: url(../img/learn-promo.jpg)
             background-position-x: left
             background-position-y: top
-            background-size: cover
+            background-size: 157%
             background-repeat: no-repeat
+
+            @media (max-width: 1199px)
+                background-size: cover
+
+            @media (max-width: 991px)
+                background-position-x: 32%
+
+            @media (max-width: 325px)
+                min-height: 400px
 
         &_trainers
             gap: 6.2rem
@@ -68,3 +127,16 @@
             line-height: 120%
             text-transform: uppercase
             color: var(--desktop-white)
+            max-width: 70%
+
+            @media (max-width: 1199px)
+                font-size: 3.5rem
+
+            @media (max-width: 991px)
+                font-size: 2.5rem
+
+            @media (max-width: 767px)
+                font-size: 2rem
+
+            @media (max-width: 575px)
+                line-height: 130%
