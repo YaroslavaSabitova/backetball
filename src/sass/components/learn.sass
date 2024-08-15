@@ -47,6 +47,9 @@
             gap: 2rem
             max-width: 1194px
 
+            @media (max-width: 575px)
+                gap: 8px
+
             &-links
                 max-width: 55%
 
@@ -112,13 +115,25 @@
             @media (max-width: 991px)
                 background-position-x: 32%
 
+            @media (max-width: 575px)
+                border-radius: 1rem
+
             @media (max-width: 325px)
-                min-height: 400px
+                background-size: 226%
+                background-position-x: 22%
+                background-position-y: 22%
+                max-height: 400px
+                gap: 22rem
 
         &_trainers
             gap: 6.2rem
             border-radius: 1.4rem
             background: var(--desktop-primary-green)
+
+            @media (max-width: 575px)
+                border-radius: 1rem
+                max-height: 400px
+                gap: 12.6rem
 
         &-title
             font-family: var(--font-family)
