@@ -9,12 +9,13 @@ body
     color: var(--color-black)
     background: var(--desktop-grey-100)
     transition: all 0.5s ease
-    padding: 2rem 0 70rem 0
+    padding: 2rem 0 0rem 0
+    position: relative
 
     @media (max-width: 1199px)
-        padding: 1.2rem 0 70rem 0
+        padding: 1.2rem 0 0rem 0
 
-    &::after
+    &::before
         // content: url(../img/account.svg);
         position: absolute
         z-index: -1

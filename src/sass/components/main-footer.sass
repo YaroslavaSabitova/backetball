@@ -1,0 +1,76 @@
+.main-footer
+    position: relative
+    overflow: hidden
+    padding-bottom: 3.8rem
+
+    @media (max-width: 1199px)
+        padding-bottom: 2.5rem
+
+    &::after
+        position: absolute
+        content: ''
+        width: 991px
+        height: 988px
+        right: -267px
+        bottom: -457px
+        background: url(../img/ball.png) center/cover no-repeat
+
+        @media (max-width: 991px)
+            width: 700px
+            height: 700px
+            right: -167px
+            bottom: -357px
+
+        @media (max-width: 767px)
+            width: 550px
+            height: 550px
+            bottom: -268px
+
+        @media (max-width: 575px)
+            width: 216px
+            height: 214px
+            bottom: 60px
+            right: -63px
+
+    &__wrapper
+        padding-top: 3.5rem
+        border-top: 1px solid var(--desktop-black)
+
+        @media (max-width: 575px)
+            padding-top: 2rem
+
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        color: var(--desktop-black)
+        width: 52%
+        margin-bottom: 3.2rem
+
+        @media (max-width: 575px)
+            width: 100%
+            margin-bottom: 2rem
+
+    &__link
+        font-family: var(--font-family)
+        font-weight: 700
+        font-size: 1.2rem
+        line-height: 140%
+        text-transform: uppercase
+        color: var(--desktop-black)
+        transition: all .3s ease
+
+        &:hover
+            color: var( --desktop-primary-orange)
+
+    &__qr-code
+        position: absolute
+        top: 80px
+        right: 318px
+        z-index: 10
+
+        @media (max-width: 1399px)
+            right: 100px
+
+        @media (max-width: 991px)
+            right: 12px

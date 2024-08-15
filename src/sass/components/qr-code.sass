@@ -1,0 +1,38 @@
+.qr-code
+    border-radius: 30px
+    max-width: 352px
+    background: var(--desktop-white)
+    padding: 4.4rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+
+    @media (max-width: 991px)
+        max-width: 300px
+
+    @media (max-width: 575px)
+        display: none
+
+    &__img
+        margin-bottom: 3.6rem
+
+    &__text
+        text-align: center
+
+        &_app
+            font-family: var(--second-family)
+            font-weight: 500
+            font-size: 1.6rem
+            line-height: 160%
+            color: var(--desktop-grey-400)
+            margin-bottom: 1.2rem
+
+        &_info
+            font-family: var(--font-family)
+            font-weight: 700
+            font-size: 1.4rem
+            line-height: 140%
+            text-transform: uppercase
+            color: var(--desktop-black)
