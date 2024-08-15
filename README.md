@@ -22,8 +22,11 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 
 **Preview**
 
-https://github.com/user-attachments/assets/44ea020e-b4df-4621-aed9-3019c7492b4c
+https://github.com/user-attachments/assets/7df003a7-e19d-408a-8f8c-a7b2a6307b25
 
-https://github.com/user-attachments/assets/db979b52-751b-47cb-a5b6-be815e33ac85
+https://github.com/user-attachments/assets/6aafd1a8-1383-4571-8620-3b4039bd0409
+
+
+
 
 
