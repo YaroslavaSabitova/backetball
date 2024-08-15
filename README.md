@@ -18,8 +18,6 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 
 ----------------
 
-[**Figma**]()
-
 **Project** - in process
 
 **Preview**
