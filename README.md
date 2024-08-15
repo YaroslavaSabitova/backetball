@@ -18,6 +18,12 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 
 ----------------
 
-**Project** - in process
+**Project** - https://yaroslavasabitova.github.io/backetball/
 
 **Preview**
+
+https://github.com/user-attachments/assets/44ea020e-b4df-4621-aed9-3019c7492b4c
+
+https://github.com/user-attachments/assets/db979b52-751b-47cb-a5b6-be815e33ac85
+
+
